@@ -1,0 +1,57 @@
+//Encapsulation :  to acieve this we can use private modifer and accessed them with public methods
+
+using system;
+
+class Class1
+{
+ private string stdName;
+ private int stdAge;
+
+ public string Name{get { return stdName;} set{stdName=value;}}
+ public int Age{get {return studentAge;} set{stdAge=value}}
+}
+class Class2
+{
+  static void Main()
+  {
+     Class Class1 c=new Class1;  // Calling the object
+        c.Name="Rajat"; //Calling the accessor and declaring the value
+        c.Age=26;
+        Console.WriteLine("Name=", +c.Name);
+        Console.WriteLine("Age=", +c.Age);
+  }
+}
+
+output: Name=Rajat Age=26 
+
+//Inheritance------------
+public class Class1
+{
+    public void Method1()
+    {
+       Console.WriteLine("Class 1"); 
+    }
+}
+
+public class Class2 : Class 2 //establishing relation ship
+ { 
+
+ public void Method2()
+    {
+       Console.WriteLine("Class 2"); 
+    }
+}
+
+public class Example
+{
+    public static void Main()
+     {
+    Class2 c = new Class1();
+        c.Method1(); //calling base class through child class
+        c.Method2(); // calling own class
+     }
+}
+ 
+output: Class1
+        Class2
+        
